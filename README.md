@@ -17,3 +17,13 @@ We will use the paper “Neural Architectures for Named Entity Recognition” by
 
 ## Hypothesis
 We believe that using features derived from a bi-LSTM on multilingual word embeddings as inputs to a classifier will achieve moderate NER results in a single training language. We hope that generalizing this process to multiple languages will give similar results in untrained languages. We suspect that languages with well-represented vocabularies and grammatical structures similar to the training language will have the best results of the unseen languages.
+
+
+## References 
+
+@article{bojanowski2016enriching,
+  title={Enriching Word Vectors with Subword Information},
+  author={Bojanowski, Piotr and Grave, Edouard and Joulin, Armand and Mikolov, Tomas},
+  journal={arXiv preprint arXiv:1607.04606},
+  year={2016}
+}
