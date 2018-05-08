@@ -21,9 +21,11 @@ We believe that using features derived from a bi-LSTM on multilingual word embed
 
 ## References 
 
+$
 @article{bojanowski2016enriching,
   title={Enriching Word Vectors with Subword Information},
   author={Bojanowski, Piotr and Grave, Edouard and Joulin, Armand and Mikolov, Tomas},
   journal={arXiv preprint arXiv:1607.04606},
   year={2016}
 }
+$
