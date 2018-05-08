@@ -1,4 +1,4 @@
-#Multilingual Named Entity Recognition
+# Multilingual Named Entity Recognition
 ##### Tony DiPadova and Steven Jiang
 
 ## Goals
