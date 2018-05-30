@@ -18,14 +18,33 @@ We will use the paper “Neural Architectures for Named Entity Recognition” by
 ## Hypothesis
 We believe that using features derived from a bi-LSTM on multilingual word embeddings as inputs to a classifier will achieve moderate NER results in a single training language. We hope that generalizing this process to multiple languages will give similar results in untrained languages. We suspect that languages with well-represented vocabularies and grammatical structures similar to the training language will have the best results of the unseen languages.
 
+## Results
+We achieved strong results for testing in several languages after training a Bi-LSTM-CRF model on a combined corpus of English, Spanish, and German IOB NER tags. We achieved the following metrics for our full model:
+
+* English: Accuracy: 0.99, Precision: 0.88, Recall: 0.74, F1: 0.79
+* German: Accuracy: 0.98, Precision: 0.72, Recall: 0.44, F1: 0.52
+* Spanish: Accuracy: 0.98, Precision: 0.82, Recall: 0.68, F1: 0.72
+
+Read more about our results in our [report](./report.pdf).
+
+## Usage
+
+We created a pretrained model that can be tested by running `python ner_parse.py` and typing a sentence in English, Spanish, German, or Italian when prompted.
+
+
 
 ## References 
 
-```
-@article{bojanowski2016enriching,
-  title={Enriching Word Vectors with Subword Information},
-  author={Bojanowski, Piotr and Grave, Edouard and Joulin, Armand and Mikolov, Tomas},
-  journal={arXiv preprint arXiv:1607.04606},
-  year={2016}
-}
-```
+Sang, Erik F Tjong Kim. Intro duction to the CoNLL Shared Task Language-Independent Named Entity Recognition. CNTS. University of Antwerp. ACL. USA. 2002. [http://www.aclweb.org/anthology/W02-2024](http://www.aclweb.org/anthology/W02-2024)
+
+Sang, Erik F. Tjong Kim \& Fien De Meulder. Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition. CNTS. University of Antwerp. ACL. USA. 2003. [http://delivery.acm.org/10.1145/1120000/1119195/p142-tjong\_kim\_sang.pdf](http://delivery.acm.org/10.1145/1120000/1119195/p142-tjong\_kim\_sang.pdf)
+
+Lample, Guillaume \& Miguel Ballesteros \&
+Sandeep Subramanian \& Kazuya Kawakami \& Chris Dyer. Neural Architectures for Named Entity Recognition. NLP Group. Carnegie Mellon University. DARPA. USA. 2016. [https://arxiv.org/pdf/1603.01360.pdf](https://arxiv.org/pdf/1603.01360.pdf)
+
+Munro, Robert \& Christopher D. Manning. Accurate Unsupervised Joint Named-Entity Extraction from Unaligned Parallel Text. Stanford NLP Group. Stanford University. USA. 2012.
+[https://nlp.stanford.edu/pubs/MunroManning2012ner.pdf](https://nlp.stanford.edu/pubs/MunroManning2012ner.pdf)
+
+Chang, Angel X. \& Valentin I. Spitkovsky \& Christopher D. Manning \& Eneko Agirre. A comparison of Named-Entity Disambiguation and Word Sense Disambiguation. Stanford NLP Group. Stanford University. IXA. USA. 2016. [https://nlp.stanford.edu/pubs/chang2016entity.pdf](https://nlp.stanford.edu/pubs/chang2016entity.pdf)
+
+
